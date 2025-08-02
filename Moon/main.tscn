@@ -1,4 +1,4 @@
-[gd_scene load_steps=267 format=4 uid="uid://b2pv5hovdkyhk"]
+[gd_scene load_steps=258 format=4 uid="uid://b2pv5hovdkyhk"]
 
 [ext_resource type="Shader" uid="uid://dyrgvftbh6utp" path="res://floor.gdshader" id="1_272bh"]
 [ext_resource type="Script" uid="uid://dw1tt1gssqdeq" path="res://gc.gd" id="1_dg77c"]
@@ -13,15 +13,6 @@
 [ext_resource type="Material" uid="uid://drsj1qdvjr2c3" path="res://cream.tres" id="8_efxa6"]
 [ext_resource type="Material" uid="uid://0ckglj8kg53l" path="res://dark_stone.tres" id="9_dg77c"]
 [ext_resource type="Script" uid="uid://ddekegl4ylnu5" path="res://player.gd" id="11_efxa6"]
-[ext_resource type="AudioStream" uid="uid://c375cqm5fcdgc" path="res://sound/bgm.mp3" id="14_w48qg"]
-[ext_resource type="AudioStream" uid="uid://cnafbj5o7ym5f" path="res://sound/one_day_you.mp3" id="15_vivmo"]
-[ext_resource type="AudioStream" uid="uid://btbsgp8opraa0" path="res://sound/that_was_fast_one.mp3" id="16_2cqfq"]
-[ext_resource type="AudioStream" uid="uid://b0tkwjcux8yuc" path="res://sound/that_drink.mp3" id="17_yaehf"]
-[ext_resource type="AudioStream" uid="uid://810bkpip82w4" path="res://sound/sacrifice.mp3" id="18_074og"]
-[ext_resource type="AudioStream" uid="uid://dd56vjbdajqfi" path="res://sound/a_small_rock.mp3" id="19_cegan"]
-[ext_resource type="AudioStream" uid="uid://b57dfc1hlipp4" path="res://sound/you_can_leave.mp3" id="20_82xsv"]
-[ext_resource type="AudioStream" uid="uid://b1h8yyp0yuvmr" path="res://sound/that_was_fast_two.mp3" id="21_getpj"]
-[ext_resource type="AudioStream" uid="uid://c1usutx0ujaww" path="res://sound/remember_when.mp3" id="22_ryguw"]
 
 [sub_resource type="Environment" id="Environment_7dm0k"]
 background_mode = 1
@@ -266,7 +257,7 @@ _data = {
 &"fadeIn": SubResource("Animation_d13ii")
 }
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m888j"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8uog0"]
 resource_name = "Material"
 cull_mode = 2
 albedo_color = Color(0.906332, 0.906332, 0.906332, 1)
@@ -296,7 +287,7 @@ _surfaces = [{
 "index_count": 2016,
 "index_data": PackedByteArray("CgEQAAsBCgEMARAADQEBAM8ADQEAAAEADgENAc8ADgHPANAA0QAOAdAA0QDQAAIADwHRAAIADwECAHsAEAEPAXsAEAF7ACwAfAAQASwAfAAsANIAEQF8ANIAEQHSAH0AEgERAX0AEgF9AH4A0wASAX4A0wB+ANQAEwHTANQAEwHUANUAFAETAdUAFAHVANYABAAUAdYABADWAAMAFQEmANcAFQEkACYA2AAVAdcA2ADXANkA2gDYANkA2gDZANsAFgHaANsAFgHbAEsAFwEWAUsAFwFLACUASgAXASUASgAlANwAGAFKANwAGAHcAH8AGQEYAX8AGQF/AIAA3QAZAYAA3QCAAN4AGgHdAN4AGgHeAN8AGwEaAd8AGwHfAOAAIwAbAeAAIwDgACcAHAEpAB0BHAEeASkAHwEcAR0BHwEdASABIQEeARwBIQEiAR4BIwEcAR8BIwEhARwBBwEfASABBwEgASQBJQEjAR8BJQEfAQcBJgEiASEBJgEGASIBJwEhASMBJwEmASEBBQEjASUBBQEnASMBKAEGASYBKAEpAQYBKgEmAScBKgEoASYBKwEnAQUBKwEqAScBLAEpASgBLAEtASkBLgEoASoBLgEsASgBLwEqASsBLwEuASoBMAEtASwBMAGBAC0BMQEsAS4BMQEwASwBAgEuAS8BAgExAS4BMgGBADABMgEzAYEANAEwATEBNAEyATABNQExAQIBNQE0ATEBNgEzATIBNgE3ATMBOAEyATQBOAE2ATIBAwE0ATUBAwE4ATQBOQE3ATYBOQEIATcBOgE2ATgBOgE5ATYBOwE4AQMBOwE6ATgBPAEIATkBPAE9AQgBPgE5AToBPgE8ATkBPwE6ATsBPwE+AToBQAE9ATwBQAFBAT0BQgFBAUABQgErAEEBQwFCAUABRAFAATwBQwFAAUQBRAE8AT4BCQFDAUQBRQFEAT4BCQFEAUUBRQE+AT8BRgEJAUUBRgFFAUcBRwFFAT8BSAFGAUcBRwE/AUkBSAFHAUoBSgFHAUkBSQE/ATsBTQBIAUoBSQE7AUsBSwE7AQMBSgFJAUwBTAFJAUsBTQBKAU0BTQFKAUwBTgFNAE0BSwEDAU8BTwEDATUBTAFLAVABUAFLAU8BTQFMAVEBUQFMAVABTgFNAVIBUgFNAVEBUwFOAVIBTwE1AVQBVAE1AQIBUAFPAVUBVQFPAVQBUwFSAVYBVwFQAVUBUQFQAVcBBAFTAVYBUgFRAVgBWAFRAVcBVgFSAVgBBAFWAVkBAQEEAVkBVgFYAVoBWQFWAVoBWAFXAVsBWgFYAVsBWwFXAVwBVwFVAVwBAQFZAV0BXgEBAV0BWQFaAV8BXQFZAV8BWgFbAWABXwFaAWABYAFbAWEBWwFcAWEBXgFdAWIBKABeAWIBKABiAWMBYgFdAWQBXQFfAWQBYwFiAWUBYgFkAWUBYwFlAWYBZAFfAf8AXwFgAf8AZQFkAWcBZAH/AGcBZgFlAWgBZQFnAWgBZgFoAWkB/wBgAWoBYAFhAWoBZwH/AGsB/wBqAWsBaAFnAWwBZwFrAWwBaQFoAW0BaAFsAW0BaQFtAW4BbgFtAW8BbgFvAXABbQFsAXEBbQFxAW8BbAFrAXIBbAFyAXEBawFzAXIBawFqAXMBcAFvAfwAcAH8AHQBbwFxAXUBbwF1AfwAcQFyAXYBcQF2AXUBcgF3AXYBcgFzAXcBdAH8AHgBdAF4AXkB/AB1AXoB/AB6AXgBdQF2AXsBdQF7AXoBdgF8AXsBdgF3AXwBeQF4AX0BeQF9AX4BeAF6AX8BeAF/AX0BegF7AYABegGAAX8BewGBAYABewF8AYEBfgF9AYIBfgGCAf0AfQF/AYMBfQGDAYIBfwGAAYQBfwGEAYMBgAGFAYQBgAGBAYUB/QCCAYYB/QCGAYcBggGDAYgBggGIAYYBgwGEAYkBgwGJAYgBhAGKAYkBhAGFAYoBhwGGAYsBhwGLAYwBjAGLAY0BjAGNASoAiwGOAY0BhgGPAYsBiwGPAY4BhgGIAY8BjwH+AI4BiAGQAY8BjwGQAf4AiAGJAZABkAH5AP4AiQGRAZABkAGRAfkAiQGKAZEBkQGSAfkAkQGTAZIBigGTAZEBkwFMAJIBigGUAZMBkwGVAUwAlAGVAZMBlQH6AEwAhQGUAYoBlQGWAfoAlgGXAfoAlAH4AJUB+ACWAZUBhQGYAZQBmAH4AJQBgQGYAYUBlgGZAZcBmQEkAZcBmQEHASQBmgGZAZYB+ACaAZYBmwEHAZkBmgGbAZkBmwElAQcB+wCaAfgAmAH7APgAnAGbAZoB+wCcAZoBnQElAZsBnAGdAZsBnQEFASUBgQGeAZgBngH7AJgBfAGeAYEBnwGcAfsAngGfAfsAfAGgAZ4BoAGfAZ4BdwGgAXwBnwGhAZwBoQGdAZwBoAGiAZ8BogGhAZ8BdwGjAaABowGiAaABcwGjAXcBpAEFAZ0BoQGkAZ0BpAErAQUBogGlAaEBpQGkAaEBpgErAaQBpQGmAaQBpgEvASsBAAGlAaIBowEAAaIBpwGmAaUBAAGnAaUBqAEvAaYBpwGoAaYBqAECAS8BVAECAagBqQFUAagBqQGoAacBVQFUAakBXAFVAakBqgGpAacBXAGpAaoBqgGnAQABYQFcAaoBqwGqAQABYQGqAasBqwEAAaMBagFhAasBcwGrAaMBagGrAXMBrAEgAOEArAEfACAArQGsAeEArQHhAOIArgGtAeIArgHiAC4ArwGuAS4ArwEuAOMA5ACvAeMA5ADjAOUAMADkAOUAMADlAOYAsAEwAOYAsAHmAOcA6ACwAecA6ADnAC8A6QDoAC8A6QAvAOoAsQHpAOoAsQHqAOsAsgGxAesAsgHrAOwAIgCyAewAIgDsACEAswEGAO0AswEFAAYAtAGzAe0AtAHtAO4A7wC0Ae4A7wDuAPAAtQHvAPAAtQHwAPEAtgG1AfEAtgHxADEAtwG2ATEAtwExAPIAuAG3AfIAuAHyAPMAuQG4AfMAuQHzAPQAugG5AfQAugH0APUAuwG6AfUAuwH1APYAvAG7AfYAvAH2APcACAC8AfcACAD3AAcAMgC9Ab4BMgB0AL0BzgDMAGYAzgBrAMwAvwHIAMABvwHBAcgAwgHDAcQBwgHFAcMBxgHHAcgBxgHJAccBygHLAcwBygHNAcsBigDOAc8BigBRAM4B0AHRAdIB0AHTAdEB1AHVAdYB1AHXAdUB2AHZAdoB2AHbAdkB3AHdAU8A3AHeAd0BvQC/AN8BvQBgAL8A4AHhAeIB4AHjAeEBQwDkAcYAQwDlAeQB5gHnAegB5gHpAecB6gHrAewB6gHtAesB7gHvAUkA7gHwAe8B8QHyAfMB8QH0AfIBhgCDAE4AhgCHAIMAUAD1AfYBUAANAPUB9wH4AfkB9wH6AfgBSAD7AcoASAD8AfsB/QH+Af8B/QEAAv4BAQICAgMCAQIEAgICBQIGAgcCBQIIAgYCCQIKAgsCCQIMAgoCbQBjAEYAbQBsAGMADQIOAg8CDQIQAg4CcwAtAIwAcwCOAC0AEQISAhMCEQIUAhICFQJCABYCFQK4AEIAFwIYAhkCFwIaAhgCcgBxAEAAcgA0AHEAGwIcAh0CGwIeAhwCHwIgAiECHwIiAiACdwB1AI8AdwCQAHUAIwIkAhsAIwIlAiQCJgInAigCJgJ2ACcCKQIqAisCKQIsAioCqAAtAjsAqAAuAi0CLwKUADACLwI1AJQAMQKTADICMQIzApMAoQA5ADQCoQB6ADkAoAA1AjYCoACdADUCNwKWADgCNwIOAJYAOQI6AjsCOQI8AjoCPQI+Aj8CPQJAAj4CowBBAkICowA3AEECpQBDAkQCpQA6AEMCRQJGAkcCRQJIAkYCsgA/ALQAsgCxAD8ASQK7AEoCSQIJALsASwJMAk0CSwJOAkwCTwJQAlECTwJSAlACWwBZAEUAWwBaAFkAUwJeAFQCUwJhAF4AqgBlAD0AqgCnAGUAVQJEAMcAVQJWAkQAVwJYAlkCVwJaAlgCWwJcAl0CWwJeAlwCXwJgAmECXwJiAmACYwJkAmUCYwJmAmQCZwJoAmkCZwJqAmgCawJsAm0CawJuAmwCbwJwAnECbwJyAnACcwJ0AnUCcwJ2AnQCdwJXAHgCdwJYAFcAeQIVAHoCeQJ7AhUAfAJoAH0CfAKkAGgAfgIUAH8CfgKAAhQAgQKCAoMCgQKEAoICqQCFAoYCqQCmAIUChwKIAokChwKKAogCrwBkABkArwCuAGQAiwKMAo0CiwKOAowCjwK6AF8AjwKQAroAkQKSApMCkQKUApICXADCAMAAXAAWAMIAlQKWApcClQKYApYCGAC3ALUAGAA+ALcAwwCZAsUAwwCaApkCmwKcAp0CmwKeApwCXQCfAqACXQChAp8CvACiAr4AvACjAqICpAKlArAApAKmAqUCpwKoAhcApwKpAqgCPACqAqsCPACsAqoCwQCtAsQAwQCuAq0CrwKwArECrwKyArACswK0ArUCswK2ArQCtgC3ArkAtgC4ArcCuQK6ArsCuQK8AroCvQK+ArMAvQK/Ar4CqwCsAK0AqwBnAKwAGgDAAsECGgDCAsACwwLEAsUCwwKbAMQCxgLHAsgCxgLJAscCHACiAGoAHABpAKIAygLLAswCygLNAssCzgLPAtACzgLRAs8C0gJuANMC0gJBAG4AYgDJAFYAYgASAMkA1AJHABMA1ALVAkcA1gLXAtgC1gLZAtcC2gLNANsC2gLcAs0A3QLeAt8C3QLgAt4C4QLiAuMC4QLkAuIC5QLmAucC5QKaAOYCHQCcAJ8AHQB5AJwA6ALpAuoC6ALrAukC7ALtAgoA7ALuAu0C7wLwAvEC7wLyAvAC8wILAPQC8wLLAAsA9QL2AvcC9QL4AvYC+QL6AvsC+QL8AvoC/QL+AlUA/QL/Av4CAANvAAEDAAMCA28AAwOeAAQDAwMFA54ABgMHAwgDBgMJAwcDNgAKAwsDNgAMAwoDDQN4AA4DDQMPA3gAEAMRAxIDEAMTAxEDFAMzABUDFAMWAzMAcAAXAxgDcAAMABcDVACLADgAVACNAIsADwBSAFMADwCJAFIAGQMaAxsDGQMcAxoDHQMeAx8DHQMgAx4DIQMiAyMDIQMkAyIDJQMmAycDJQMoAyYDEQCFAIgAEQCEAIUAmACVAJkAmACXAJUAKQOSACoDKQMrA5IAkQAsAx4AkQAtAywDLgMvAzADLgMxAy8DMgMzAzQDMgM1AzMDNgM3AzgDNgM5AzcDOgM7AzwDOgM9AzsDPgM/A0ADPgNBAz8DQgNDA0QDQgNFA0MDRgNHA0gDRgNJA0cDSgNLA0wDSgNNA0sDTgOCAE8DTgNQA4IA"),
 "lods": [1e-10, PackedByteArray("TgAQAIIATgCDABAAhABOAIIAhACCAIUAhgCDAE4AhgCHAIMAUgBOAIQAUgCGAE4AEQCEAIUAEQCFAIgAUwBSAIQAUwCEABEAUACHAIYAUAANAIcAiQCGAFIAiQBQAIYADwBSAFMADwCJAFIAigANAFAAigBRAA0AiwBQAIkAiwCKAFAAOACJAA8AOACLAIkAjABRAIoAjAAtAFEAjQCKAIsAjQCMAIoAVACLADgAVACNAIsAcwAtAIwAcwCOAC0ADACMAI0ADABzAIwAcACNAFQAcAAMAI0AMgCOAHMAMgB0AI4AMwBzAAwAMwAyAHMAcQAMAHAAcQAzAAwAjwB0ADIAjwB1AHQAHgAyADMAHgCPADIANAAzAHEANAAeADMAdwB1AI8AdwCQAHUAkQCPAB4AkQB3AI8AdgAeADQAdgCRAB4AkgCQAHcAkgCTAJAAeAB3AJEAeACSAHcAlACRAHYAlAB4AJEAlQCTAJIAlQCWAJMAlwCWAJUAlwAOAJYAmACXAJUAmQCVAJIAmACVAJkAmQCSAHgANgCYAJkANQCZAHgANgCZADUANQB4AJQAmgA2ADUAmgA1AHkAeQA1AJQAmwCaAHkAeQCUAJwAmwB5AB0AHQB5AJwAnACUAHYAnQCbAB0AnAB2AJ4AngB2ADQAHQCcAJ8AnwCcAJ4AnQAdAHoAegAdAJ8AoACdAHoAngA0AHIAcgA0AHEAnwCeAGkAaQCeAHIAegCfADkAOQCfAGkAoAB6AKEAoQB6ADkANwCgAKEAcgBxAEAAQABxAHAAaQByAKIAogByAEAANwChADoAHABpAKIAOQBpABwAowA3ADoAoQA5AKQApAA5ABwAOgChAKQAowA6AKUApgCjAKUAOgCkAKcApQA6AKcApAAcAGgApwCkAGgAaAAcAGoAHACiAGoApgClAKgAqQCmAKgApQCnAKoAqAClAKoApwBoAGUAqgCnAGUAZQBoABsAaABqABsAqQCoAGcAGgCpAGcAGgBnAKsAZwCoADsAqACqADsAqwBnAKwAZwA7AKwAqwCsAK0AOwCqAD0AqgBlAD0ArAA7AK4AOwA9AK4ArQCsAK8ArACuAK8ArQCvALAAPQBlALEAZQAbALEArgA9ALIAPQCxALIArwCuAGQArgCyAGQAsACvABkArwBkABkAsAAZALMAswAZABgAswAYADwAGQBkAD4AGQA+ABgAZACyALQAZAC0AD4AsgA/ALQAsgCxAD8APAAYALUAPAC1ALYAGAA+ALcAGAC3ALUAPgC0ALgAPgC4ALcAtAAJALgAtAA/AAkAtgC1AF8AtgBfALkAtQC3ALoAtQC6AF8AtwC4AEIAtwBCALoAuAC7AEIAuAAJALsAuQBfAF0AuQBdALwAXwC6AL0AXwC9AF0AugBCAGAAugBgAL0AQgBhAGAAQgC7AGEAvABdAFwAvABcAL4AXQC9ABYAXQAWAFwAvQBgAL8AvQC/ABYAYABeAL8AYABhAF4AvgBcAMAAvgDAAMEAXAAWAMIAXADCAMAAFgC/AFsAFgBbAMIAvwBaAFsAvwBeAFoAwQDAAMMAwQDDAMQAxADDAMUAxADFABcAwwDGAMUAwABDAMMAwwBDAMYAwADCAEMAQwDHAMYAwgBFAEMAQwBFAMcAwgBbAEUARQBEAMcAWwBZAEUARQBZAEQAWwBaAFkAWQAUAEQAWQBXABQAWgBXAFkAVwDIABQAWgBYAFcAVwATAMgAWAATAFcAEwBVAMgAXgBYAFoAEwBHAFUARwBPAFUAWABWABMAVgBHABMAXgAVAFgAFQBWAFgAYQAVAF4ARwBJAE8ASQCIAE8ASQARAIgAyQBJAEcAVgDJAEcAygARAEkAyQDKAEkAygBTABEAYgDJAFYAFQBiAFYAEgDKAMkAYgASAMkASABTAMoAEgBIAMoASAAPAFMAYQBGABUARgBiABUAuwBGAGEAYwASAGIARgBjAGIAuwBtAEYAbQBjAEYACQBtALsAYwBuABIAbgBIABIAbQBsAGMAbABuAGMACQBmAG0AZgBsAG0APwBmAAkACwAPAEgAbgALAEgACwA4AA8AbABBAG4AQQALAG4AywA4AAsAQQDLAAsAywBUADgAzABBAGwAZgDMAGwAzQDLAEEAzADNAEEAbwBUAMsAzQBvAMsAbwBwAFQAQABwAG8ACgBAAG8ACgBvAM0AogBAAAoAagCiAAoAawAKAM0AagAKAGsAawDNAMwAGwBqAGsAzgBrAMwAGwBrAM4AzgDMAGYAsQAbAM4APwDOAGYAsQDOAD8AAAABAM8AAADPANAA0QAAANAA0QDQAAIA0QACAHsA0QB7ACwAfADRACwAfAAsANIAfADSAH0A0wB8AH0A0wB9AH4A0wB+ANQA0wDUANUA0wDVANYABADTANYABADWAAMAJAAmANcA2AAkANcA2ADXANkA2gDYANkA2gDZANsA2gDbAEsA2gBLACUASgDaACUASgAlANwASgDcAH8ASgB/AIAA3QBKAIAA3QCAAN4A3QDeAN8AIwDdAN8AIwDfAOAAIwDgACcAHwAgAOEAHwDhAOIAHwDiAC4AHwAuAOMA5AAfAOMA5ADjAOUAMADkAOUAMADlAOYAMADmAOcA6AAwAOcA6ADnAC8A6QDoAC8A6QAvAOoA6QDqAOsA6QDrAOwAIgDpAOwAIgDsACEABQAGAO0ABQDtAO4A7wAFAO4A7wDuAPAA7wDwAPEA7wDxADEACADvADEACAAxAPIACADyAPMACADzAPQACAD0APUACAD1APYACAD2APcACAD3AAcA+ABMAPkA+AD6AEwA+QD7APgA+wD6APgA/AD7APkA/QD8APkA/QD5AP4A/QD+ACoAKAD8AP0AKAD7APwAKAD/APsA/wAAAfsAKAAAAf8AAAH6APsAKAABAQABAQECAQABAAECAfoAAQEDAQIBAQEEAQMBAgEFAfoATQADAQQBAgEGAQUBBQEGAfoAAgEDAQYB+gAGAQcB+gAHASkABwEGASkAAwGBAAYBAwEIAYEATQAIAQMBCQEIAU0ACQErAAgB"), 0.210286, PackedByteArray("TgANABAAEQBOABAAEQAQAE8AUAANAE4AUQANAFAAUgBQAE4AUgBOABEAOABRAFAAUwBSABEAVABRADgADwBQAFIADwBSAFMAOABQAA8ASABTABEASAAPAFMACwA4AA8ACwAPAEgACwBUADgASAARAEkASQARAE8AEgBIAEkARwBJAE8AEgBJAEcARwBPAFUAEwBHAFUAEwBVABQAVgBHABMAVgASAEcAVwATABQAWABWABMAWAATAFcAWQBXABQAWQAUAEQAWgBYAFcAWgBXAFkAWwBaAFkARQBZAEQAWwBZAEUAQwBFAEQAFwBDAEQAFgBbAEUAFgBaAFsAFgBFAEMAFwBcAEMAXAAWAEMAPABcABcAXQAWAFwAPABdAFwAFgBeAFoAXgBYAFoAXwAWAF0APABfAF0AYABeABYAXwBgABYAXgAVAFgAFQBWAFgAYABhAF4AYQAVAF4AXwA+AGAAQgBhAGAAPgBCAGAAGAA+AF8APAAYAF8AFQBiAFYAYgASAFYAYQBGABUARgBiABUAPAAZABgAGQA+ABgACQBGAGEAQgAJAGEARgBjAGIAYwASAGIAPgA/AEIAPwAJAEIAGQBkAD4AZAA/AD4AOwBkABkAPAA7ABkAZAA9AD8AOwA9AGQAPQBlAD8AOwBlAD0APwBmAAkAZQBmAD8APABnADsAZwBlADsAGgBnADwAGgA3AGcAZwA6AGUANwA6AGcAZQA6AGgAZQBoABsAZQAbAGYAOgBpAGgAaABqABsAaABpAGoAGwBqAGsAGwBrAGYAagAKAGsAagBpAAoAZgBrAEEAawAKAEEAZgBBAGwAZgBsAG0ACQBmAG0ACQBtAEYAbQBjAEYAbQBsAGMAbABuAGMAbABBAG4AYwBuABIAbgBIABIAbgALAEgAQQALAG4ACgALAEEACgBvAAsAbwBUAAsACgBAAG8AbwBwAFQAQABwAG8AaQBAAAoAcAAMAFQAQABxAHAAcQAMAHAAcgBxAEAAaQByAEAADAAtAFQAVAAtAFEADABzAC0AcQAzAAwAMwBzAAwAcgA0AHEANAAzAHEAMgAtAHMAMwAyAHMAMgB0AC0AdQB0ADIAHgAyADMAHgB1ADIANAAeADMAdgA0AHIAdgAeADQAaQB2AHIAHgB3AHUAdwAOAHUAeAAeAHYAeAB3AB4ANQAOAHcANQB3AHgANgAOADUANwA2ADUAeQA1AHgAeQB4AHYANwA1AHkAHQB5AHYANwB5AB0AHQB2AGkANwAdAHoAOQAdAGkAegAdADkANwB6ADkAOgA5AGkANwA5ADoAAAABAAIAAAACAHsAAAB7ACwAfAAAACwAfAAsAH0AfAB9AH4AfAB+AAMABAB8AAMAJAAmAEsAJABLACUASgAkACUASgAlAH8ASgB/AIAAIwBKAIAAIwCAACcAHwAgAC4AHwAuAC8AMAAfAC8AIgAwAC8AIgAvACEABQAGADEACAAFADEACAAxAAcAKABMACoAKAApAEwAKABNACkATQCBACkATQArAIEA"), 0.48186, PackedByteArray("AAABAAIAAAACACwAAAAsAAMABAAAAAMAHwAgAC4AHwAuAC8AMAAfAC8AIgAwAC8AIgAvACEABQAGADEACAAFADEACAAxAAcAMgAOAC0AHgAOADIAMwAyAC0AHgAyADMAMwAtAAwANAAeADMANAAzAAwANQAOAB4ANQAeADQANgAOADUADAAtAA0ANwA2ADUADAANADgANwA1AB0AHQA1ADQANwAdADkAOAANAA8ANwA5ADoAGgA3ADoAOQAdABwAHQA0ABwAOgA5ABwAGgA6ADsAGgA7ADwAOgA9ADsAOgAcAD0AOwA9ABkAPAA7ABkAPAAZAD4AGQA9AD8AGQA/AD4APQAcABsAPQAbAD8AHAA0AEAAQAA0AAwAHAAKABsAHABAAAoAPwAbAAkAGwAKAAkACgBAAEEAQAAMAEEACQAKAEEAQQAMADgAPwAJAEIAPgA/AEIAPAA+AEIAQgAJABUAPABCABYAQgAVABYAFwA8ABYAFwAWAEMAQwBEABcAFgBFAEMAQwBFAEQAFgAVAEUARQAUAEQACQBGABUACQBBAEYAFQATAEUARQATABQARgASABUARgBBABIAFQASABMAEwAQABQAEgBHABMAEwBHABAAQQBIABIAEgBJAEcARwBJABAAEgBIAEkAQQAPAEgASAAPAEkADwAQAEkAQQA4AA8ADwANABAASgAlACcAIwBKACcASgAkACUAJABLACUAJAAmAEsAKABMACoAKAApAEwAKABNACkATQArACkA"), 0.701342, PackedByteArray("AAABAAMABAAAAAMACAAGAAcACAAFAAYAJAAmACcAIwAkACcAHwAgACEAIgAfACEADgAQABoAGgAQABcAKAApACoAKAArACkA"), 0.718277, PackedByteArray("AAABACwAAAAsAAMABAAAAAMAJAAmACcAIwAkACcABQAGAAcACAAFAAcAHgAOAC0ACgAOAB4AHgAtAAoAGgAOAAoACgAtABIAEgAtABAAGgAKAAkACQAKABIAFwAaAAkAFQASABAAFwAVABAACQASABUAFwAJABUAHwAgACEAIgAfACEAKAApACoAKAArACkA"), 0.789732, PackedByteArray("AAABAAIAAAACAAMABAAAAAMABQAGAAcACAAFAAcACQAKAAsACgAMAAsADAANAAsADAAOAA0ACwANAA8ADwANABAACwAPABEADwAQABEACwARABIAEwARABAAEgARABMAEwAQABQAFQALABIAFQASABMACQALABUAFgATABQAFgAVABMAFgAUABcAGAAVABYAFwAYABYAGAAJABUAFwAZABgAGQAJABgAGgAZABcAGQAbAAkAGgAbABkAGwAKAAkAGgAcABsAHAAKABsAGgAdABwAGgAOAB0AHAAeAAoAHQAeABwAHQAOAB4ACgAeAAwAHgAOAAwAHwAgACEAIgAfACEAIwAkACUAJAAmACUAIwAlACcAKAApACoAKAArACkA")],
-"material": SubResource("StandardMaterial3D_m888j"),
+"material": SubResource("StandardMaterial3D_8uog0"),
 "name": "Material",
 "primitive": 3,
 "uv_scale": Vector4(0, 0, 0, 0),
@@ -2321,7 +2312,8 @@ roof = NodePath("moon/Cube_010")
 environment = SubResource("Environment_7dm0k")
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.6607, 1.31531, -7.70447)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6607, 1.31531, -0.70447)
+collision_layer = 2
 script = ExtResource("11_efxa6")
 
 [node name="Pivot" type="Node3D" parent="CharacterBody3D"]
@@ -2484,6 +2476,7 @@ tag = "fire"
 shape = SubResource("ConcavePolygonShape3D_qnost")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_036"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_036/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_rqtf5")
@@ -2505,6 +2498,7 @@ transform = Transform3D(0.999997, 0, -0.00260055, 0, 1, 0, 0.00260055, 0, 0.9999
 shape = SubResource("ConcavePolygonShape3D_wnkbs")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_037"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_037/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_1vm84")
@@ -2524,6 +2518,7 @@ tag = "fire"
 shape = SubResource("ConcavePolygonShape3D_f6a44")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_038"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_038/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_wu3dr")
@@ -2593,8 +2588,8 @@ mesh = SubResource("ArrayMesh_su8r0")
 skeleton = NodePath("")
 
 [node name="Area3D" type="Area3D" parent="moon/Cube_013"]
-collision_layer = 4
-collision_mask = 0
+collision_layer = 7
+collision_mask = 7
 script = ExtResource("4_ycdy4")
 tag = "door_one"
 
@@ -2623,6 +2618,7 @@ mesh = SubResource("ArrayMesh_wcqak")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_002"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_002/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_yaehf")
@@ -2635,6 +2631,7 @@ mesh = SubResource("ArrayMesh_blc53")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_003"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_003/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_074og")
@@ -2647,6 +2644,7 @@ mesh = SubResource("ArrayMesh_j8yi1")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_010"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_010/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ryguw")
@@ -2658,6 +2656,7 @@ mesh = SubResource("ArrayMesh_0pvfs")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_007"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_007/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_4c57u")
@@ -2669,6 +2668,7 @@ mesh = SubResource("ArrayMesh_7motx")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_008"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_008/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_efxa6")
@@ -2679,6 +2679,7 @@ mesh = SubResource("ArrayMesh_fwxtq")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_009"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_009/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_dg77c")
@@ -2689,6 +2690,7 @@ mesh = SubResource("ArrayMesh_0odcx")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_011"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_011/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ycdy4")
@@ -2700,6 +2702,7 @@ mesh = SubResource("ArrayMesh_77caq")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_014"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_014/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_w48qg")
@@ -2710,6 +2713,7 @@ mesh = SubResource("ArrayMesh_78qj6")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_056"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_056/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_vivmo")
@@ -2720,6 +2724,7 @@ mesh = SubResource("ArrayMesh_5b0l6")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_001"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_001/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_2cqfq")
@@ -2731,6 +2736,7 @@ mesh = SubResource("ArrayMesh_r6c3y")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_004"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_004/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_cegan")
@@ -2742,6 +2748,7 @@ mesh = SubResource("ArrayMesh_co0sb")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_005"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_005/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_82xsv")
@@ -2752,6 +2759,7 @@ mesh = SubResource("ArrayMesh_0cyte")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_006"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_006/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_getpj")
@@ -2762,6 +2770,7 @@ mesh = SubResource("ArrayMesh_eklj0")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_012"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_012/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_d13ii")
@@ -2773,6 +2782,7 @@ mesh = SubResource("ArrayMesh_pywu5")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_015"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_015/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0odxb")
@@ -2784,6 +2794,7 @@ mesh = SubResource("ArrayMesh_hxedh")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_016"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_016/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_lswn8")
@@ -2794,6 +2805,7 @@ mesh = SubResource("ArrayMesh_aoht5")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_017"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_017/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_a6jrf")
@@ -2804,6 +2816,7 @@ mesh = SubResource("ArrayMesh_ctq3x")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_018"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_018/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_xuqvo")
@@ -2814,6 +2827,7 @@ mesh = SubResource("ArrayMesh_j52er")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_019"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_019/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_qsp4k")
@@ -2825,6 +2839,7 @@ mesh = SubResource("ArrayMesh_u1kaj")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_020"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_020/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_kq58d")
@@ -2836,6 +2851,7 @@ mesh = SubResource("ArrayMesh_a2wp4")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_021"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_021/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_seu75")
@@ -2847,6 +2863,7 @@ mesh = SubResource("ArrayMesh_2du3n")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_022"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_022/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_htxhm")
@@ -2857,6 +2874,7 @@ mesh = SubResource("ArrayMesh_arsup")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_023"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_023/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_jq2sk")
@@ -2867,6 +2885,7 @@ mesh = SubResource("ArrayMesh_5j1no")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_024"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_024/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_4k2k6")
@@ -2877,6 +2896,7 @@ mesh = SubResource("ArrayMesh_f43un")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_025"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_025/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0rl1p")
@@ -2902,6 +2922,7 @@ mesh = SubResource("ArrayMesh_tkebl")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_027"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_027/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_facbu")
@@ -2913,6 +2934,7 @@ mesh = SubResource("ArrayMesh_deoge")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_028"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_028/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_b1qrp")
@@ -2924,6 +2946,7 @@ mesh = SubResource("ArrayMesh_j1iy4")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_029"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_029/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_come4")
@@ -2935,6 +2958,7 @@ mesh = SubResource("ArrayMesh_h3e8s")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_030"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_030/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_h8e4i")
@@ -2946,6 +2970,7 @@ mesh = SubResource("ArrayMesh_wngqg")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_031"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_031/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_4lmeg")
@@ -2957,6 +2982,7 @@ mesh = SubResource("ArrayMesh_i84e2")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_032"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_032/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0cp0l")
@@ -2967,6 +2993,7 @@ mesh = SubResource("ArrayMesh_c4i86")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_033"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_033/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_d2t1y")
@@ -2978,6 +3005,7 @@ mesh = SubResource("ArrayMesh_34chd")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_034"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_034/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_gngh3")
@@ -2989,6 +3017,7 @@ mesh = SubResource("ArrayMesh_csyef")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_035"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_035/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0n3wm")
@@ -2999,6 +3028,7 @@ mesh = SubResource("ArrayMesh_a0vr1")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_039"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_039/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0cbny")
@@ -3010,6 +3040,7 @@ mesh = SubResource("ArrayMesh_f52qv")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_041"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_041/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_uypp3")
@@ -3021,6 +3052,7 @@ mesh = SubResource("ArrayMesh_e4i4t")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_042"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_042/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_blkrb")
@@ -3032,6 +3064,7 @@ mesh = SubResource("ArrayMesh_y76s3")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_043"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_043/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_abqjc")
@@ -3043,6 +3076,7 @@ mesh = SubResource("ArrayMesh_v0fyx")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_047"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_047/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_rnkwl")
@@ -3054,6 +3088,7 @@ mesh = SubResource("ArrayMesh_7s6ob")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_048"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_048/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_vke2r")
@@ -3065,6 +3100,7 @@ mesh = SubResource("ArrayMesh_ejvsy")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_049"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_049/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_uit24")
@@ -3076,6 +3112,7 @@ mesh = SubResource("ArrayMesh_4jki4")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_050"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_050/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_ruth0")
@@ -3087,6 +3124,7 @@ mesh = SubResource("ArrayMesh_sxkgb")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_051"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_051/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_rm4vd")
@@ -3097,6 +3135,7 @@ mesh = SubResource("ArrayMesh_q4ll1")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_052"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_052/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_pjyto")
@@ -3108,6 +3147,7 @@ mesh = SubResource("ArrayMesh_4hkh3")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_053"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_053/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_sm6fg")
@@ -3118,6 +3158,7 @@ mesh = SubResource("ArrayMesh_p0egd")
 skeleton = NodePath("")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="moon/Cube_054"]
+collision_mask = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="moon/Cube_054/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_b17eg")
@@ -3128,39 +3169,4 @@ material_override = ExtResource("5_kek77")
 mesh = SubResource("ArrayMesh_jtrh5")
 skeleton = NodePath("")
 
-[node name="bgm" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("14_w48qg")
-volume_db = -12.0
-autoplay = true
-
-[node name="Audio" type="Node3D" parent="."]
-
-[node name="one_day_you" type="AudioStreamPlayer" parent="Audio"]
-stream = ExtResource("15_vivmo")
-
-[node name="that_was_fast_one" type="AudioStreamPlayer" parent="Audio"]
-stream = ExtResource("16_2cqfq")
-
-[node name="that_drink" type="AudioStreamPlayer" parent="Audio"]
-stream = ExtResource("17_yaehf")
-
-[node name="sacrifice" type="AudioStreamPlayer" parent="Audio"]
-stream = ExtResource("18_074og")
-
-[node name="a_small_rock" type="AudioStreamPlayer" parent="Audio"]
-stream = ExtResource("19_cegan")
-
-[node name="you_can_leave" type="AudioStreamPlayer" parent="Audio"]
-stream = ExtResource("20_82xsv")
-
-[node name="that_was_fast_two" type="AudioStreamPlayer" parent="Audio"]
-stream = ExtResource("21_getpj")
-
-[node name="remember_when" type="AudioStreamPlayer" parent="Audio"]
-stream = ExtResource("22_ryguw")
-
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
-[connection signal="finished" from="Audio/one_day_you" to="." method="_on_one_day_you_finished"]
-[connection signal="finished" from="Audio/that_drink" to="." method="_on_that_drink_finished"]
-[connection signal="finished" from="Audio/sacrifice" to="." method="_on_sacrifice_finished"]
-[connection signal="finished" from="Audio/a_small_rock" to="." method="_on_a_small_rock_finished"]

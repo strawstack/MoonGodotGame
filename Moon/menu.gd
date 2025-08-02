@@ -10,7 +10,7 @@ func _on_button_pressed():
 
 func _ready():
 	$level/CanvasLayer/Button.visible = false
-	scene = load("res://main.tscn").instantiate()
+	scene = preload("res://main.tscn").instantiate()
 	$level/CanvasLayer/Button.visible = true
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 

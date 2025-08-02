@@ -12,9 +12,11 @@ var goal = 0 # if three
 var playOnce = true
 var exitOnce = true
 
+var audio 
 func _ready():
+	audio = get_tree().get_root().get_node("menu/Audio")
 	ap = $AnimationPlayer
-	$Audio/one_day_you.play()
+	audio.get_node("one_day_you").play()
 	seen["door_one"] = true
 	seen["door_two"] = true
 	seen["leaving"] = true
@@ -39,21 +41,21 @@ func interact(tag):
 
 	if tag == "door_one":
 		ap.play(tag)
-		$Audio/that_was_fast_one.play()
+		audio.get_node("that_was_fast_one").play()
 
 	if tag == "drink":
 		drink.visible = false
-		$Audio/that_drink.play()
+		audio.get_node("that_drink").play()
 
 	if tag == "brick":
 		ap.play(tag)
 
 	if tag == "fire":
-		$Audio/a_small_rock.play()
+		audio.get_node("a_small_rock").play()
 
 	if tag == "door_two":
 		ap.play(tag)
-		$Audio/that_was_fast_two.play()
+		audio.get_node("that_was_fast_two").play()
 	
 	if tag == "final":
 		ap.play("fadeIn")
@@ -61,24 +63,24 @@ func interact(tag):
 func playSacrifice():
 	if playOnce:
 		playOnce = false
-		$Audio/sacrifice.play()
+		audio.get_node("sacrifice").play()
 
 func _on_that_drink_finished():
 	goal += 1
 	if goal == 3:
-		$Audio/you_can_leave.play()
+		audio.get_node("you_can_leave").play()
 		seen.erase("door_two")
 
 func _on_sacrifice_finished():
 	goal += 1
 	if goal == 3:
-		$Audio/you_can_leave.play()
+		audio.get_node("you_can_leave").play()
 		seen.erase("door_two")
 
 func _on_a_small_rock_finished():
 	goal += 1
 	if goal == 3:
-		$Audio/you_can_leave.play()
+		audio.get_node("you_can_leave").play()
 		seen.erase("door_two")
 
 func _on_one_day_you_finished():
@@ -87,7 +89,7 @@ func _on_one_day_you_finished():
 func leave():
 	if exitOnce:
 		exitOnce = false
-		$Audio/remember_when.play()
+		audio.get_node("remember_when").play()
 
 func _on_animation_player_animation_finished(anim_name):
 	if anim_name == "fadeIn":
