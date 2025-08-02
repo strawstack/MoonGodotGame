@@ -26,7 +26,7 @@ func _ready():
 func _input(event):
 
 	# Capture mouse on left click
-	if event.is_action_pressed("left_click"):
+	if event.is_action_pressed("left_click") and gc.gameStart:
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 	# Free mouse on esc
@@ -34,12 +34,12 @@ func _input(event):
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 
 	# https://forum.godotengine.org/t/how-to-make-the-camera-moves-by-the-mouse-in-3d/24201/2
-	if event is InputEventMouseMotion:
+	if event is InputEventMouseMotion and gc.gameStart:
 		$Pivot.rotate_y(deg_to_rad(-event.relative.x * mouse_sens))
 		$Pivot/Camera3D.rotate_x(deg_to_rad(-event.relative.y * mouse_sens))
 
 # Runs every frame
-func _process(delta):
+func _process(_delta):
 	# Return player to start on reset
 	#if Input.is_action_just_pressed("reset"):
 		#self.position = playerStart + Vector3.UP * 3.0
@@ -49,7 +49,7 @@ func _process(delta):
 			gc.interact(tag)
 
 # Runs every physics frame
-func _physics_process(delta):
+func _physics_process(_delta):
 
 	# If collision, show interact prompt
 	if ray.is_colliding():

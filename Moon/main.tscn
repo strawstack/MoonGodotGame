@@ -2438,7 +2438,6 @@ omni_range = 4096.0
 [node name="Light2" type="OmniLight3D" parent="moon"]
 transform = Transform3D(-0.290865, -0.771101, 0.566393, -0.055189, 0.604525, 0.794672, -0.955171, 0.199883, -0.218391, -4.48752, 4.7773, 5.4873)
 light_color = Color(0.129412, 0.619608, 0.737255, 1)
-shadow_enabled = true
 omni_range = 4096.0
 
 [node name="Light5" type="OmniLight3D" parent="moon"]
@@ -2456,8 +2455,7 @@ omni_range = 4096.0
 [node name="Light3" type="OmniLight3D" parent="moon"]
 transform = Transform3D(-0.290865, -0.771101, 0.566393, -0.055189, 0.604525, 0.794672, -0.955171, 0.199883, -0.218391, 7.18524, 3.23441, -7.61436)
 light_color = Color(0.513726, 0.219608, 0.92549, 1)
-light_energy = 5.0
-shadow_enabled = true
+light_energy = 10.0
 omni_range = 4096.0
 
 [node name="Cube_036" type="MeshInstance3D" parent="moon"]

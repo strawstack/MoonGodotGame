@@ -3,12 +3,13 @@ extends Node3D
 var scene
 
 func _on_button_pressed():
-	var children = $level.get_children()
-	for child in children:
-		child.queue_free()
-	$level.add_child(scene)
+	$level/Camera3D.visible = false
+	$level/SpotLight3D.visible = false
+	$level/CanvasLayer.visible = false
+	$level/main.playStart()
 
 func _ready():
+	$level/SpotLight3D.visible = true
 	$level/CanvasLayer/Button.visible = false
 	scene = preload("res://main.tscn").instantiate()
 	$level/CanvasLayer/Button.visible = true

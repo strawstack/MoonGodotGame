@@ -11,12 +11,12 @@ var seen = {}
 var goal = 0 # if three
 var playOnce = true
 var exitOnce = true
-
 var audio 
+var gameStart = false
+
 func _ready():
 	audio = get_tree().get_root().get_node("menu/Audio")
 	ap = $AnimationPlayer
-	audio.get_node("one_day_you").play()
 	seen["door_one"] = true
 	seen["door_two"] = true
 	seen["leaving"] = true
@@ -24,6 +24,13 @@ func _ready():
 	wall_one.visible = true
 	wall_two.visible = true
 	roof.visible = true
+
+func playStart():
+	gameStart = true
+	$CharacterBody3D/Pivot/Camera3D.current = true
+	$CanvasLayer2.visible = true
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	audio.get_node("one_day_you").play()
 
 func showInteract(tag):
 	if tag == null:
@@ -42,6 +49,8 @@ func interact(tag):
 	if tag == "door_one":
 		ap.play(tag)
 		audio.get_node("that_was_fast_one").play()
+		$moon/Light2.shadow_enabled = true
+		$GPUParticles3D.emitting = true
 
 	if tag == "drink":
 		drink.visible = false
@@ -84,6 +93,8 @@ func _on_a_small_rock_finished():
 		seen.erase("door_two")
 
 func _on_one_day_you_finished():
+	$moon/Light3.shadow_enabled = true
+	$moon/Light3.light_energy = 5.0
 	seen.erase("door_one")
 
 func leave():
