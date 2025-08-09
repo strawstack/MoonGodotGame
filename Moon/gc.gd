@@ -49,8 +49,8 @@ func interact(tag):
 	if tag == "door_one":
 		ap.play(tag)
 		audio.get_node("that_was_fast_one").play()
-		$moon/Light2.shadow_enabled = true
-		$GPUParticles3D.emitting = true
+		#$moon/Light2.shadow_enabled = true
+		#$GPUParticles3D.emitting = true
 
 	if tag == "drink":
 		drink.visible = false
@@ -93,8 +93,8 @@ func _on_a_small_rock_finished():
 		seen.erase("door_two")
 
 func _on_one_day_you_finished():
-	$moon/Light3.shadow_enabled = true
-	$moon/Light3.light_energy = 5.0
+	#$moon/Light3.shadow_enabled = true
+	#$moon/Light3.light_energy = 5.0
 	seen.erase("door_one")
 
 func leave():

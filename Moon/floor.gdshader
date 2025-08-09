@@ -15,7 +15,7 @@ void fragment() {
 	} else {
 		ALBEDO = mix(color.xyz, tex, 0.5);
 	}
-	
+
 }
 
 //void light() {
